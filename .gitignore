@@ -14,6 +14,8 @@ dist-ssr
 
 # Editor directories and files
 .vscode/*
+xdd-ui/es
+xdd-ui/lib
 paly/node_modules
 !.vscode/extensions.json
 .idea

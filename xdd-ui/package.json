@@ -1,0 +1,21 @@
+{
+  "name": "xdd-ui",
+  "private": false,
+  "version": "0.0.12",
+  "keywords": [
+    "xdd-ui",
+    "xddui",
+    "xddUI",
+    "xddUi",
+    "xdd"
+  ],
+  "description": "",
+  "main": "lib/index.js",
+  "files": ["es", "lib"],
+  "module": "es/index.mjs",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.16.1"
+  }
+}

@@ -8,7 +8,7 @@
 
 建议您使用包管理器 (NPM, Yarn, pnpm) 安装 xddUI, 然后您就可以使用打包工具，例如 Vite 和 webpack
 
-# 选择一个你喜欢的包管理器
+# 选择一个你喜欢的包管理器 推荐pnpm 因为用到了pnpm-workspace
 
 ### NPM
 ``` copy
