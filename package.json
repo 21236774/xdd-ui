@@ -1,12 +1,12 @@
 {
   "name": "xdd-ui",
   "private": false,
-  "version": "0.0.1",
-  "keywords": ["xdd-ui", "xddui", "xddUI", "xddUi"],
+  "version": "0.0.5",
+  "keywords": ["xdd-ui", "xddui", "xddUI", "xddUi", "xdd"],
   "description": "",
-  "main": "dist/es/index.mjs",
+  "main": "dist/es/index.js",
   "files": ["dist"],
-  "module": "dist/lib/index.js",
+  "module": "dist/lib/index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "pnpm -C play docs:dev",
@@ -23,14 +23,12 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "@types/node": "^18.16.1",
-    "@xdd-ui/components": "workspace:^1.0.0",
-    "@xdd-ui/utils": "workspace:^1.0.0"
+    "@types/node": "^18.16.1"
   },
   "exports": {
     ".":{
-      "import" : "./dist/lib/index.js",
-      "require": "./dist/es/index.mjs"
+      "import" : "./dist/es/index.js",
+      "require": "./dist/lib/index.mjs"
     }
   }
 }

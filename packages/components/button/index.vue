@@ -1,58 +1,11 @@
 <script lang="ts" setup>
+import './style/index.less'
 import defineProp from './props'
 const props = defineProps(defineProp)
 
 </script>
 
 <template>
-  <button :class="['xdd-' + type]"><slot /></button>
+  <button :class="['xdd-' + type, 'xdd-button']"><slot /></button>
 </template>
-
-<style lang="less" scoped>
-// 点击散发的效果
-button {
-  color: #333;
-  &:hover {
-    border: none;
-  }
-  &:after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    inset: 0;
-    border-radius: inherit;
-    box-shadow: 0 0 0 6px #f1f1f1;
-    opacity: 0;
-    transition: .4s;
-  }
-  &:active::after{
-    box-shadow: none;
-    opacity: 0.6;
-    transition: 0s;
-  }
-  padding: 10px 16px;
-  margin: 0px;
-  /*自定义边框*/
-  border: 0px;
-  /*消除默认点击蓝色边框效果*/
-  outline: none;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  position: relative;
-  transition: .4s;
-  box-shadow: 0 2px #00000004;
-  border-radius: 8px;
-  margin: 12px 12px;
-}
-.xdd-success {
-  background-color: #18a058;
-  color: #f1f1f1;
-  &:after{
-    box-shadow: 0 0 0 6px #18a058;
-  }
-}
-</style>
 

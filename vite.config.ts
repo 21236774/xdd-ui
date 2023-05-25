@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import dts from "vite-plugin-dts";
+import dts from "vite-plugin-dts" // 打包声明文件
 import vue from '@vitejs/plugin-vue'
 
 
@@ -27,7 +27,7 @@ export default defineConfig({
           //打包格式
           format: "es",
           //打包后文件名
-          entryFileNames: "[name].mjs",
+          entryFileNames: "[name].js",
           //让打包目录和我们目录对应
           preserveModules: true,
           exports: "named",
@@ -38,7 +38,7 @@ export default defineConfig({
            //打包格式
            format: "cjs",
            //打包后文件名
-           entryFileNames: "[name].js",
+           entryFileNames: "[name].cjs",
            //让打包目录和我们目录对应
            preserveModules: true,
            exports: "named",
@@ -47,5 +47,8 @@ export default defineConfig({
         }
       ],
     }
+  },
+  css: {
+    extract: false
   }
 })

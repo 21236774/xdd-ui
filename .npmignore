@@ -29,6 +29,8 @@ examples/
 packages/
 public/
 play/
+dist/paly
 vite.config.js
+vite-env.d.ts
 *.map
 *.html
