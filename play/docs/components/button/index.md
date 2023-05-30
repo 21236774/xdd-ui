@@ -1,7 +1,7 @@
 ### 按钮
 
 <xdd-button>默认按钮</xdd-button>
-<xdd-button type="success">怎么说，龙哥</xdd-button>
+<xdd-button type="success">怎么说</xdd-button>
 
 ::: details 显示代码
 

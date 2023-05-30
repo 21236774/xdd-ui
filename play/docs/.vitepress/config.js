@@ -1,5 +1,6 @@
 export default {
   title: "xddUi",
+  base:  process.env.NODE_ENV === 'production' ? '/xddui/' : '/',
   themeConfig: {
     logo: "/logo.jpg",
     nav: [
@@ -8,7 +9,7 @@ export default {
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/21236774" }],
     sidebar: {
-      "/guild/": [
+      "/guild": [
         {
           text: "基础",
           items: [
@@ -32,7 +33,7 @@ export default {
           ],
         },
       ],
-      "/components/": [
+      "/components": [
         {
           text: "基础组件",
           items: [

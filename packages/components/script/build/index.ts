@@ -3,7 +3,7 @@ import { series, parallel, dest, src } from "gulp"
 import { componentPath, xddPath } from "../utils/paths"
 import run from "../utils/run"
 const less = require('gulp-less')
-const autoprefixer = require('gulp-autoprefixer')
+const autoprefixer = require('gulp-autoprefixer') // 美化样式
 
 
 // 删除easyest
