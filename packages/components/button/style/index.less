@@ -1,5 +1,5 @@
 .xdd-button {
-  color: #333;
+  color: var(--x-btn-text-color);
   &:hover {
     border: none;
   }
@@ -32,13 +32,49 @@
   position: relative;
   transition: .4s;
   box-shadow: 0 2px #00000004;
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 12px 12px;
 }
 .xdd-success {
   background-color: #18a058;
-  color: #f1f1f1;
-  &:after{
-    box-shadow: 0 0 0 6px #18a058;
+  &:hover {
+    background-color: #2dc272;
   }
+  &:after{
+    box-shadow: 0 0 0 6px #2dc272;
+  }
+}
+.xdd-info {
+  background-color: #72b1f8;
+  &:hover {
+    background-color: #8acbec;
+  }
+  &:after{
+    box-shadow: 0 0 0 6px #8acbec;
+  }
+}
+.xdd-warning {
+  background-color: #f0c87f;
+  &:hover {
+    background-color: #f5d599;
+  }
+  &:after{
+    box-shadow: 0 0 0 6px #f5d599;
+  }
+}
+.xdd-error {
+  background-color: #eb7878;
+  &:hover {
+    background-color: #e98b8b;
+  }
+  &:after{
+    box-shadow: 0 0 0 6px #e98b8b;
+  }
+}
+.xdd-default {
+  color: #333;
+}
+.xdd-button-true {
+  opacity: 0.6;
+  color: #333;
 }

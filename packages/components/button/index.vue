@@ -6,6 +6,14 @@ const props = defineProps(defineProp)
 </script>
 
 <template>
-  <button :class="['xdd-' + type, 'xdd-button']"><slot /></button>
+  <button :class="[
+  'xdd-' + type,
+  'xdd-button',
+  'xdd-button-'+disabled
+  ]" 
+  :disabled="disabled"
+  >
+    <slot />
+  </button>
 </template>
 
