@@ -6,7 +6,7 @@ const less = require('gulp-less')
 const autoprefixer = require('gulp-autoprefixer') // 美化样式
 
 
-// 删除easyest
+// 删除xddui
 export const removeDist = () => {
   return delPath(`${xddPath}/xdd-ui`);
 }

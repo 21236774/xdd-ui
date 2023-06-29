@@ -4,6 +4,7 @@ import { xddPath } from "./paths";
 //保留的文件
 const stayFile = ["package.json", "README.md"];
 
+// 删除目录
 const delPath = async (path: string) => {
   let files: string[] = []
   

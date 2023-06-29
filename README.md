@@ -35,7 +35,7 @@ cd xdd-ui
 npm login
 npm publish
 ```
-> 注意 `npm run build:gulp` 命令报错可在执行一次即可
+> 注意 `npm run build:gulp` 命令报错可在执行一次即可（原因文件还未删干净）
 
 #### xdd-ui------跟目录打包组件示例项目发布
 ```bash
