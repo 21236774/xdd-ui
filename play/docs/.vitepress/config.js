@@ -41,6 +41,10 @@ export default {
               text: "Button",
               link: "/components/button/",
             },
+            {
+              text: "Modal",
+              link: "/components/modal/",
+            },
           ],
         },
       ],

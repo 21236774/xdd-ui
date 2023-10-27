@@ -8,14 +8,16 @@ const propsData = defineProps(props)
 
 watch(() => propsData.theme, (newVal) => {
   const key = newVal !== 'dark' ? 'theme' : newVal
-  setThemeStyle(themeStyle[key])
+  console.log(key); 
+  setThemeStyle(themeStyle[key], propsData.className)
 })
 onMounted(() => {
   const key = propsData.theme !== 'dark' ? 'theme' : 'dark'
-  setThemeStyle(themeStyle[key])
+  console.log(propsData.theme); 
+  setThemeStyle(themeStyle[key], propsData.className)
 })
 
 </script>
 <template>
-  <div :class="['xdd-theme-' + theme, 'xdd-theme']"><slot/></div>
+  <div :class="['xdd-theme-' + theme, 'xdd-theme', className]"><slot/></div>
 </template>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './style/index.less'
 import defineProp from './props'
-const props = defineProps(defineProp)
+defineProps(defineProp)
 
 </script>
 
@@ -9,7 +9,8 @@ const props = defineProps(defineProp)
   <button :class="[
   'xdd-' + type,
   'xdd-button',
-  'xdd-button-'+disabled
+  'xdd-button-'+disabled,
+  'xdd-button-'+size
   ]" 
   :disabled="disabled"
   >

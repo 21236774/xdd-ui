@@ -21,7 +21,7 @@
     opacity: 0.6;
     transition: 0s;
   }
-  padding: 10px 16px;
+  padding: 8px 14px;
   margin: 0px;
   /*自定义边框*/
   border: 0px;
@@ -34,6 +34,18 @@
   box-shadow: 0 2px #00000004;
   border-radius: 6px;
   margin: 12px 12px;
+  &-tiny {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  &-small {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  &-large {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
 }
 .xdd-success {
   background-color: #18a058;
@@ -45,30 +57,30 @@
   }
 }
 .xdd-info {
-  background-color: #72b1f8;
+  background-color: #2080f0;
   &:hover {
-    background-color: #8acbec;
+    background-color: #4098fc;
   }
   &:after{
-    box-shadow: 0 0 0 6px #8acbec;
+    box-shadow: 0 0 0 6px #4098fc;
   }
 }
 .xdd-warning {
-  background-color: #f0c87f;
+  background-color: #f0a020;
   &:hover {
-    background-color: #f5d599;
+    background-color: #fcb040;
   }
   &:after{
-    box-shadow: 0 0 0 6px #f5d599;
+    box-shadow: 0 0 0 6px #fcb040;
   }
 }
 .xdd-error {
-  background-color: #eb7878;
+  background-color: #d03050;
   &:hover {
-    background-color: #e98b8b;
+    background-color: #de576d;
   }
   &:after{
-    box-shadow: 0 0 0 6px #e98b8b;
+    box-shadow: 0 0 0 6px #de576d;
   }
 }
 .xdd-default {
@@ -77,4 +89,12 @@
 .xdd-button-true {
   opacity: 0.6;
   color: #333;
+}
+
+.xdd-button-true {
+  cursor: no-drop;
+  opacity: 0.6;
+  &::after{
+    box-shadow: none;
+  }
 }

@@ -8,5 +8,9 @@ export default {
     default: () => {
       return {}
     }
+  },
+  className: {
+    type: String,
+    default: 'xdd-theme'
   }
 }

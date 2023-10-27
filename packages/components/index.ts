@@ -1,6 +1,7 @@
 import { App } from "vue";
 import xddButton from './button/index.vue'
 import configProvider from './config-provider/index.vue'
+import xddModal from './modal/index.vue'
 
 export { xddButton }
 
@@ -9,6 +10,7 @@ const xddUI = {
   install(app: App) {
     app.component("xButton", xddButton)
     app.component("xConfigProvider", configProvider)
+    app.component("xModal", xddModal)
   },
 }
 

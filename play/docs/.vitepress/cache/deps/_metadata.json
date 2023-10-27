@@ -1,17 +1,17 @@
 {
-  "hash": "716cde07",
-  "browserHash": "ad00d6b3",
+  "hash": "fb8fa9f5",
+  "browserHash": "944db324",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "cc97e042",
+      "fileHash": "e59e8951",
       "needsInterop": false
     },
     "xdd-ui": {
-      "src": "../../../../../node_modules/.pnpm/xdd-ui@0.0.23/node_modules/xdd-ui/es/index.mjs",
+      "src": "../../../../../node_modules/.pnpm/xdd-ui@0.0.24/node_modules/xdd-ui/es/index.mjs",
       "file": "xdd-ui.js",
-      "fileHash": "9274e329",
+      "fileHash": "af62bb48",
       "needsInterop": false
     }
   },

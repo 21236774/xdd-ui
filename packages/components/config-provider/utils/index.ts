@@ -1,8 +1,12 @@
 
-export const setThemeStyle = (themeMap: object) => {
+export const setThemeStyle = (themeMap: object, className = 'xdd-theme') => {
+  console.log('className: ', className);
   type FooType = keyof typeof themeMap
-  Object.keys(themeMap).forEach((key) => {
-    const dom = <HTMLElement>document.getElementsByClassName('xdd-theme')[0]
-    dom.style.setProperty(`--${key}`, themeMap[key as FooType])
-  })
+  const doms = document.getElementsByClassName(className)
+  for (let i = 0; i < doms.length; i++) {
+    const dom = doms[i] as HTMLElement;
+    Object.keys(themeMap).forEach((key) => {
+      dom.style.setProperty(`--${key}`, themeMap[key as FooType]);
+    });
+  }
 }
