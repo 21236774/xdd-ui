@@ -1,7 +1,7 @@
 #### 基本用法
 > 模态框的基础用法，你可以把任何东西放进去，比如一个div。
 <ClientOnly>
-<x-config-provider :theme="!isDark ? 'theme' : 'dark'">
+<x-config-provider :theme="!isDark ? 'theme' : 'dark'" darkBgColor="rgb(24, 24, 28);">
   <x-button @click="show = !show">点吧</x-button>
   <x-modal v-model:show="show">
     <div>最基础用法</div>

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useSlots, ref } from 'vue'
-import XButton from '../../button/index.vue'
+import XButton from '../../button/button.vue'
 import '../style/dialog.less'
 import defineProp from './props'
 defineProps(defineProp)

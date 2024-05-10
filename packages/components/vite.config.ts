@@ -8,10 +8,12 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      entryRoot: "./",
-      outputDir: ["../../xdd-ui/es/components", "../../xdd-ui/lib/components"],
+      entryRoot: "src",
+      rollupTypes: true,
+      copyDtsFiles: true,
+      outDir: ["../../xdd-ui/es/components", "../../xdd-ui/lib/components"],
       //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
-      tsConfigFilePath: "../../tsconfig.json",
+      tsconfigPath: "../../tsconfig.json",
     }),
     {
       name: "style",

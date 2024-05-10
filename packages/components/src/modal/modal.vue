@@ -1,7 +1,13 @@
 <script lang="ts" setup>
+import { defineProps, defineOptions } from 'vue'
 import defineProp from './props'
 import Dialog from './dialog/index.vue'
 import './style/index.less'
+
+defineOptions({
+  name: 'x-modal'
+})
+
 
 const props = defineProps(defineProp)
 const emit = defineEmits(['update:show', 'cancel-click', 'confirm-click'])

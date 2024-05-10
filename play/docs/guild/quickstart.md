@@ -19,17 +19,23 @@ new Vue({
   render: h => h(App)
 })
 ```
+> 如需获取TS类型输入提示，则需要在项目根目录 `tsconfig.json` 中配置一下
+```json
+{
+  "include": ["...", "node_modules/xdd-ui/lib/**/*.d.ts"],
+}
+```
 
 #### 按需引入
 > 在vue组件中引入，这里示例vue3
 ```vue
 <script setup lang="ts">
-import { xddButton } from 'xdd-ui/es/components'
+import { xButton } from 'xdd-ui/es/components'
 </script>
 
 <template>
   <div>
-    <xdd-button type="success">成功按钮</xdd-button>
+    <x-button type="success">成功按钮</x-button>
   </div>
 </template>
 

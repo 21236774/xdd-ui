@@ -2,6 +2,9 @@
 import './style/index.less'
 import defineProp from './props'
 defineProps(defineProp)
+defineOptions({
+  name: 'x-button'
+})
 
 </script>
 

@@ -38,12 +38,16 @@ export default {
           text: "基础组件",
           items: [
             {
-              text: "Button",
+              text: "按钮 Button",
               link: "/components/button/",
             },
             {
-              text: "Modal",
+              text: "弹框 Modal",
               link: "/components/modal/",
+            },
+            {
+              text: "配置 ConfigProvider",
+              link: "/components/config-provider/",
             },
           ],
         },

@@ -9,6 +9,8 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "lib": ["esnext", "dom"],
-    "types": ["unplugin-vue-define-options/macros-global" /* ... */]
+    "resolveJsonModule": true,
+    "types": ["unplugin-vue-define-options/macros-global", "xdd-ui/lib/components/index.d.ts"],
+
   }
 }
