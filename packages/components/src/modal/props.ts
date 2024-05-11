@@ -1,5 +1,5 @@
-import { type PropType } from 'vue'
-export default {
+import { type PropType, type ExtractPropTypes } from 'vue'
+const props = {
   show: {
     type: Boolean,
     default: false
@@ -26,3 +26,6 @@ export default {
     default: '确定'
   }
 }
+export type ModalProps = ExtractPropTypes<typeof props>
+
+export default props

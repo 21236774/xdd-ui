@@ -22,7 +22,7 @@ new Vue({
 > 如需获取TS类型输入提示，则需要在项目根目录 `tsconfig.json` 中配置一下
 ```json
 {
-  "include": ["...", "node_modules/xdd-ui/lib/**/*.d.ts"],
+  "include": ["...", "node_modules/xdd-ui/es/**/*.d.ts"],
 }
 ```
 
@@ -30,7 +30,7 @@ new Vue({
 > 在vue组件中引入，这里示例vue3
 ```vue
 <script setup lang="ts">
-import { xButton } from 'xdd-ui/es/components'
+import { xButton } from 'xdd-ui'
 </script>
 
 <template>

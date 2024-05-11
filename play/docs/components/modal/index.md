@@ -28,6 +28,44 @@ const show = ref(false)
 :::
 <br>
 
+#### 命令式调用
+> 通过函数方式调用，和模板语法传参一致
+<ClientOnly>
+<x-config-provider :theme="!isDark ? 'theme' : 'dark'" darkBgColor="rgb(24, 24, 28);">
+ <x-button type="info" @click="openModal">我是命令式的</x-button>
+</x-config-provider>
+</ClientOnly>
+
+::: details 显示代码
+
+```Vue
+<script setup>
+import { h } from 'vue'
+import { useModal, XButton } from '@xdd-ui/components/index'
+const { open, destroy } = useModal()
+const defaultContent = () => h(XButton, '我是默认插槽');
+const namedSlotContent = () => h('p', '我是header插槽');
+const openModal = () => {
+  open({
+    default: defaultContent,
+    header: namedSlotContent,
+  }, { show: true, preset: 'dialog' })
+  // 3ms后关闭
+  setTimeout(() => {
+    destroy()
+  }, 3000)
+}
+</script>
+
+<template>
+  <x-button type="info" @click="openModal">我是命令式的</x-button>
+</template>
+
+```
+:::
+
+<br>
+
 #### 使用 Dialog 预设
 > `Dialog`  预设的例子、通过maskClosable设置为false控制点击遮罩层不关闭弹窗。
 <ClientOnly>
@@ -111,10 +149,25 @@ const show = ref(false)
 :::
 
 <script setup>
-import { ref } from 'vue'
+import { ref, h } from 'vue'
+import { useModal, XButton } from '@xdd-ui/components/index'
 const show = ref(false)
 const showDialog = ref(false)
 const showDialogSlot = ref(false)
 import { useData } from 'vitepress'
 const { isDark } = useData()
+const { open, destroy } = useModal()
+const defaultContent = () => h(XButton, '我是默认插槽');
+const namedSlotContent = () => h('p', '我是header插槽');
+const openModal = () => {
+  open({
+    default: defaultContent,
+    header: namedSlotContent,
+  }, { show: true, preset: 'dialog' })
+  // 3ms后自动关闭
+  setTimeout(() => {
+    destroy()
+  }, 3000)
+}
+
 </script>

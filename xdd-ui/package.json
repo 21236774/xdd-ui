@@ -1,7 +1,7 @@
 {
   "name": "xdd-ui",
   "private": false,
-  "version": "0.0.26",
+  "version": "0.0.28",
   "keywords": [
     "xdd-ui",
     "xddui",
@@ -10,10 +10,10 @@
     "xdd"
   ],
   "description": "",
-  "main": "lib/index.js",
+  "main": "es/index.mjs",
   "files": ["es", "lib"],
-  "types": "lib/components/index.d.ts",
-  "module": "es/index.mjs",
+  "types": "es/components/index.d.ts",
+  "module": "lib/index.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
