@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { defineProps, defineOptions } from 'vue'
+import { defineProps, defineOptions, watch } from 'vue'
 import defineProp from './props'
 import Dialog from './dialog/index.vue'
 import './style/index.less'
@@ -26,7 +26,16 @@ const confirm = () => {
   setShow(false)
   emit('confirm-click')
 }
-
+const toggleBodyOverflow = (flag: boolean) => {
+  document.body.style.overflow = flag ? "hidden" : "auto";
+};
+// 在模态框显示时禁用滚动
+watch(
+  () => props.show,
+  (newVal: boolean) => {
+    toggleBodyOverflow(newVal);
+  }
+);
 </script>
 <template>
   <Teleport to="body">
