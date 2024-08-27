@@ -1,6 +1,6 @@
 export default {
   title: "xddUi",
-  base:  process.env.NODE_ENV === 'production' ? '/xddui/' : '/',
+  base:  process.env.NODE_ENV === 'production' ? '/xdd-ui/' : '/',
   themeConfig: {
     logo: "/logo.jpg",
     nav: [
