@@ -10,9 +10,13 @@ const useModal = () => {
     const dom = document.createElement('div')
     document.getElementsByTagName('body')[0].appendChild(dom)
     app.mount(dom)
+    document.body.style.overflow = "hidden"
   }
   const destroy = () => {
-    if(app) app.unmount()
+    if(app) {
+      document.body.style.overflow = "auto";
+      app.unmount()
+    }
   }
   return { open, destroy }
 }
